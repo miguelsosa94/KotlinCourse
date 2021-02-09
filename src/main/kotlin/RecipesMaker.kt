@@ -26,7 +26,6 @@ fun main(){
     }while (optionMenu!="3")
 }
 
-
  fun salir() {
      println("FINALIZANDO")
      exitProcess(0)
@@ -52,7 +51,7 @@ fun main(){
      val nombreReceta: String? = readLine()
      val listaIngredientes: MutableList<String> = mutableListOf()
      do {
-         println("Seleccione el ingrediente a agregar o escoga la opción 9 para salir:")
+         println("Seleccione el ingrediente a agregar o 9 para salir:")
          for ((index, option) in ingredientes.withIndex()) {
              println("${index + 1}. $option")
          }
@@ -74,7 +73,6 @@ fun main(){
 
      recetas.put(nombreReceta, listaIngredientes);
  }
-
 
 fun OpcionToInt(opcion: String?): Int {
     try {
